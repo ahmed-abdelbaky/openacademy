@@ -8,6 +8,12 @@
                 -mange skill    
     """,
     'version': '1.0',
+    'demo': [
+        'demo.xml',
+    ],
+    'data': [
+        'views/openacademy.xml',
+    ],
 
 
 }
