@@ -1,5 +1,17 @@
 <odoo>
     <data>
+        <record id="Course_form" model="ir.ui.view">
+            <field name="name">Course_form</field>
+            <field name="model">academy.course</field>
+            <field name="arch" type="xml">
+                <form string="Course_form">
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                    </group>
+                </form>
+            </field>
+        </record>
         <record id="course_action" model="ir.actions.act_window">
             <field name="name">course_action</field>
             <field name="res_model">academy.course</field>
