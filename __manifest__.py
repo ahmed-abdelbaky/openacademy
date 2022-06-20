@@ -13,6 +13,7 @@
     ],
     'data': [
         'views/openacademy.xml',
+        'Views/session.xml',
     ],
 
 
