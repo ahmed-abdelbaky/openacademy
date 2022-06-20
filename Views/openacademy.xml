@@ -5,10 +5,17 @@
             <field name="model">academy.course</field>
             <field name="arch" type="xml">
                 <form string="Course_form">
-                    <group>
-                        <field name="name"/>
-                        <field name="description"/>
-                    </group>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="description"/>
+                        </group>
+                        <notebook>
+                            <page string="description">
+                               <field name="description"/>
+                            </page>
+                        </notebook>
+                    </sheet>
                 </form>
             </field>
         </record>
