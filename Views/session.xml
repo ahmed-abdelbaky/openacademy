@@ -6,12 +6,16 @@
             <field name="arch" type="xml">
                 <form string="Session Form">
                     <sheet>
-                        <group>
+                        <group string ='Schedule'>
                             <field name="name"/>
                             <field name="start_date"/>
                             <field name="duration"/>
                             <field name="number_of_seat"/>
+                            <field name="instructor_id"/>
+                            <field name="course_id"/>
                         </group>
+                        <label for ='attendence_ids'/>
+                        <field name="attendence_ids"/>
                     </sheet>
                 </form>
             </field>
