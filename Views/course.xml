@@ -6,13 +6,24 @@
             <field name="arch" type="xml">
                 <form string="Course_form">
                     <sheet>
-                        <group>
+                        <group string="General">
                             <field name="name"/>
                             <field name="description"/>
+                            <field name="responsible_id"/>
                         </group>
                         <notebook>
                             <page string="description">
-                               <field name="description"/>
+                                <field name="description"/>
+                            </page>
+                            <page string="Sessions">
+                                <field name="session_ids">
+                                <tree string="Register Sessions">
+                                    <field name="name"/>
+                                    <field name="start_date"/>
+                                    <field name="instructor_id"/>
+                                    <field name="number_of_seat"/>
+                                </tree>
+                                </field>
                             </page>
                         </notebook>
                     </sheet>
@@ -30,7 +41,7 @@
             </field>
         </record>
         <record id="course_action" model="ir.actions.act_window">
-            <field name="name">course_action</field>
+            <field name="name">course action</field>
             <field name="res_model">academy.course</field>
         </record>
         <menuitem id="openacademy_main" name="open Academy"/>
