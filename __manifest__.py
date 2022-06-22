@@ -12,7 +12,7 @@
         'demo.xml',
     ],
     'data': [
-        'views/openacademy.xml',
+        'views/course.xml',
         'Views/session.xml',
     ],
 
