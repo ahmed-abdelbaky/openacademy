@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+        <record id="partner_form_inhert" model="ir.ui.view">
+            <field name="name">partner instructor</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+               <notebook position="inside">
+                   <page string="Session">
+                       <group>
+                       <field name="instructor"/>
+                       <field name="session_ids"/>
+                       </group>
+                   </page>
+               </notebook>
+            </field>
+        </record>
+        <record id="contract_action" model="ir.actions.act_window">
+            <field name="name">contract action</field>
+            <field name="res_model">res.partner</field>
+        </record>
+        <menuitem id="configuration_menu" name="Configration"
+                  parent="openacademy_main" />
+        <menuitem id ="contract_menu" name="Contracts"
+                  parent="configuration_menu"
+                  action="contract_action"/>
+    </data>
+</odoo>
