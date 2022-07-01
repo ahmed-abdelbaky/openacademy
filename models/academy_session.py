@@ -12,3 +12,12 @@ class academySession(models.Model):
     instructor_id = fields.Many2one('res.partner', string='instructor', index=True, ondelete='cascade')
     course_id = fields.Many2one('academy.course', string='Courses', required=True, ondelete='cascade')
     attendence_ids = fields.Many2many('res.partner', string='set of attendees')
+    taken_seats = fields.Float(string="taken seats ", compute="_taken_seats")
+
+    @api.depends("attendence_ids", "number_of_seat")
+    def _taken_seats(self):
+        for record in self:
+            if not record.number_of_seat:
+                record.taken_seats = 0.0
+            else:
+                record.taken_seats = (100*len(record.attendence_ids) / record.number_of_seat)
