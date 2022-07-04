@@ -1,6 +1,7 @@
 from email.policy import default
 
 from odoo import models, fields, api
+from odoo.exceptions import UserError
 
 
 class academySession(models.Model):
@@ -41,3 +42,9 @@ class academySession(models.Model):
                     'message': 'number of attends is greater than number of seats',
                 },
             }
+
+    @api.constrains('instructor_id', 'attendence_ids')
+    def check_instructor(self):
+        for record in self:
+            if record.instructor_id in record.attendence_ids:
+                raise UserError("instructor must be in attendence")
