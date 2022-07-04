@@ -1,3 +1,5 @@
+from email.policy import default
+
 from odoo import models, fields, api
 
 
@@ -6,7 +8,8 @@ class academySession(models.Model):
     _description = "academy session to show courses session details"
 
     name = fields.Char(string="name", required=True)
-    start_date = fields.Date()
+    start_date = fields.Date(default=fields.Date.today)
+    active = fields.Boolean(default=True)
     duration = fields.Float(digits=(6, 2), help="Duration in day")
     number_of_seat = fields.Integer(string="number of seats")
     instructor_id = fields.Many2one('res.partner', string='instructor', index=True, ondelete='cascade')
@@ -20,4 +23,21 @@ class academySession(models.Model):
             if not record.number_of_seat:
                 record.taken_seats = 0.0
             else:
-                record.taken_seats = (100*len(record.attendence_ids) / record.number_of_seat)
+                record.taken_seats = (100 * len(record.attendence_ids) / record.number_of_seat)
+
+    @api.onchange("attendence_ids", "number_of_seat")
+    def _on_change(self):
+        if self.number_of_seat < 0:
+            return {
+                'warning': {
+                    'title': 'invalid Number',
+                    'message': 'number of seats must be positive',
+                },
+            }
+        if self.number_of_seat < len(self.attendence_ids):
+            return {
+                'warning': {
+                    'title': "invalid number",
+                    'message': 'number of attends is greater than number of seats',
+                },
+            }
