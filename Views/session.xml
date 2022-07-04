@@ -23,7 +23,8 @@
                     <sheet>
                         <group string='Schedule'>
                             <field name="name"/>
-                            <field name="start_date"/>
+                            <field name="start_date" />
+                            <field name="active" />
                             <field name="duration"/>
                             <field name="number_of_seat"/>
                             <field name="instructor_id"/>
