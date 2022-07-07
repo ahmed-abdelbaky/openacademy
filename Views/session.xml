@@ -4,7 +4,7 @@
             <field name="name">Session tree</field>
             <field name="model">academy.session</field>
             <field name="arch" type="xml">
-                <tree string="Session Tree">
+                <tree string="Session Tree" decoration-primary="duration&lt;5" decoration-danger="duration&gt;15" >
                     <field name="name"/>
                     <field name="start_date"/>
                     <field name="duration"/>
