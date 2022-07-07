@@ -17,6 +17,12 @@ class academySession(models.Model):
     course_id = fields.Many2one('academy.course', string='Courses', required=True, ondelete='cascade')
     attendence_ids = fields.Many2many('res.partner', string='set of attendees')
     taken_seats = fields.Float(string="taken seats ", compute="_taken_seats")
+    number_of_attendence = fields.Integer(compute="get_number_of_attendence", store=True)
+
+    @api.depends("attendence_ids")
+    def get_number_of_attendence(self):
+        for record in self:
+            record.number_of_attendence = len(record.attendence_ids)
 
     @api.depends("attendence_ids", "number_of_seat")
     def _taken_seats(self):
