@@ -13,3 +13,12 @@ class academyCourse(models.Model):
          ),
         ("UNIQUE NAME", "UNIQUE(name)", "Course Name already Exist")
     ]
+
+    @api.returns('self', lambda value: value.id)
+    def copy(self, default=None):
+        if default is None:
+            default = {}
+
+        if not default.get('name'):
+            default['name'] = f"copy of {self.name}"
+        return super(academyCourse, self).copy(default)
