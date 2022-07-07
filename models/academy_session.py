@@ -18,7 +18,7 @@ class academySession(models.Model):
     attendence_ids = fields.Many2many('res.partner', string='set of attendees')
     taken_seats = fields.Float(string="taken seats ", compute="_taken_seats")
     number_of_attendence = fields.Integer(compute="get_number_of_attendence", store=True)
-
+    color =fields.Integer()
     @api.depends("attendence_ids")
     def get_number_of_attendence(self):
         for record in self:
