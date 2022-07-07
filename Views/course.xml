@@ -37,12 +37,17 @@
                 <search>
                     <field name="name"/>
                     <field name="description"/>
+                    <filter name="my_search" string="My Search" domain="[('responsible_id','=',uid)]"/>
+                    <group string="Group by">
+                        <filter name="group_responsible" string="Responsible" context="{'group_by': 'responsible_id'}"/>
+                    </group>
                 </search>
             </field>
         </record>
         <record id="course_action" model="ir.actions.act_window">
             <field name="name">course action</field>
             <field name="res_model">academy.course</field>
+            <field name="context" eval="{'search_default_my_search':1}"/>
         </record>
         <menuitem id="openacademy_main" name="open Academy"/>
         <menuitem id="openacademy_menu" name="open Academy" parent="openacademy_main"/>
