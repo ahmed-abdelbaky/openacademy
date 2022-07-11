@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <record id="Category" model="ir.module.category">
+            <field name="name">Open Academy</field>
+        </record>
+        <record id="Manager_Member" model="res.groups">
+            <field name="name">Manager Member</field>
+            <field name="category_id" ref="Category"/>
+        </record>
+        <record id = "User Member" model="res.groups">
+            <field name="name">User</field>
+            <field name="category_id" ref="Category"/>
+        </record>
+    </data>
+</odoo>
