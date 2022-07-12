@@ -38,7 +38,7 @@
 
             </field>
         </record>
-        <record id="calender view" model="ir.ui.view">
+        <record id="calender_view" model="ir.ui.view">
             <field name="name">calender view</field>
             <field name="model">academy.session</field>
             <field name="arch" type="xml">
