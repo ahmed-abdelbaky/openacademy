@@ -21,6 +21,7 @@
         'views/course.xml',
         'Views/session.xml',
         'Views/partner.xml',
+        'Views/wizard.xml',
     ],
 
 
