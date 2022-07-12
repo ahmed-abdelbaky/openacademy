@@ -12,9 +12,9 @@
         'demo.xml',
     ],
     'depends':
-    [
-        'crm',
-    ],
+        [
+            'crm', 'board'
+        ],
     'data': [
         'security/security.xml',
         'security/ir.model.access.csv',
@@ -24,7 +24,7 @@
         'Views/wizard.xml',
         'reports/session_template_report.xml',
         'reports/session_report.xml',
+        'Views/board.xml',
     ],
-
 
 }
