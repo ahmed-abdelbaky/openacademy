@@ -22,6 +22,8 @@
         'Views/session.xml',
         'Views/partner.xml',
         'Views/wizard.xml',
+        'reports/session_template_report.xml',
+        'reports/session_report.xml',
     ],
 
 
