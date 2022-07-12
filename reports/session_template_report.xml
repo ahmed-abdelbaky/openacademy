@@ -1,0 +1,34 @@
+<odoo>
+    <data>
+        <template id="session_template_report">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <t t-foreach="docs" t-as="o">
+                        <div class="page">
+                            <div class="oe_structure"/>
+                            <p>
+                                <b>session'name:</b>
+                                <span t-field="o.name"/>
+                            </p>
+                            <p>
+                                <b>start date: </b>
+                                <span t-field="o.start_date"/>
+                                <b> to </b>
+                                <b>end date: </b>
+                                <span t-field="o.start_date"/>
+                            </p>
+                            <p>
+                                <h1>attendence</h1>
+                                <t t-foreach="o.attendence_ids" t-as="x">
+                                  <li> <span t-field="x.name"/></li>
+                                </t>
+
+                            </p>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+    </data>
+</odoo>
