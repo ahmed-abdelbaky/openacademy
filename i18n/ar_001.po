@@ -1,0 +1,359 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* openacademy
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-12 11:53+0000\n"
+"PO-Revision-Date: 2022-07-12 11:53+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.view_kanban
+msgid ""
+"<br/>\n"
+"                                    Start date:"
+msgstr ""
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.view_kanban
+msgid ""
+"<br/>\n"
+"                                    duration:"
+msgstr ""
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.view_kanban
+msgid "<i class=\"fa fa-bars fa-lg\" title=\"Manage\" aria-label=\"Manage\"/>"
+msgstr ""
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_session__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: openacademy
+#: model:ir.actions.act_window,name:openacademy.launch_session_wizard
+#: model_terms:ir.ui.view,arch_db:openacademy.wizard_form_view
+msgid "Add Attendees"
+msgstr "اضافه الحضور"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__attendee_ids
+msgid "Attendees"
+msgstr "الحضور"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.wizard_form_view
+msgid "Cancel"
+msgstr "الغاء"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_session__color
+msgid "Color"
+msgstr "اللون"
+
+#. module: openacademy
+#: model:ir.ui.menu,name:openacademy.configuration_menu
+msgid "Configration"
+msgstr "تاكيد"
+
+#. module: openacademy
+#: model:ir.model,name:openacademy.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: openacademy
+#: model:ir.ui.menu,name:openacademy.contract_menu
+msgid "Contracts"
+msgstr "جهات الاتصال"
+
+#. module: openacademy
+#: model:ir.model.constraint,message:openacademy.constraint_academy_course_UNIQUE
+#: NAME
+msgid "Course Name already Exist"
+msgstr "اسم الكورس موجود بالفعل"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.Course_form
+msgid "Course_form"
+msgstr "تصميم الكورس"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_session__course_id
+#: model:ir.ui.menu,name:openacademy.Course
+msgid "Courses"
+msgstr "الكورس"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_course__create_uid
+#: model:ir.model.fields,field_description:openacademy.field_academy_session__create_uid
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__create_uid
+msgid "Created by"
+msgstr "تم انشائه بواسطه"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_course__create_date
+#: model:ir.model.fields,field_description:openacademy.field_academy_session__create_date
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__create_date
+msgid "Created on"
+msgstr "تم انشائه في"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.view_kanban
+msgid "Delete"
+msgstr "حذف"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_course__description
+msgid "Description"
+msgstr "الوصف"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_course__display_name
+#: model:ir.model.fields,field_description:openacademy.field_academy_session__display_name
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__display_name
+msgid "Display Name"
+msgstr "عرض الاسم"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_session__duration
+msgid "Duration"
+msgstr "المده الزمنيه"
+
+#. module: openacademy
+#: model:ir.model.fields,help:openacademy.field_academy_session__duration
+msgid "Duration in day"
+msgstr "المده الزمنيه خلال اليوم"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.Course_form
+msgid "General"
+msgstr "عامه"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.graph_view
+msgid "Graph View"
+msgstr "تصميم الشكلي"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.Course_search
+msgid "Group by"
+msgstr "مجمزعه من"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_course__id
+#: model:ir.model.fields,field_description:openacademy.field_academy_session__id
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__id
+msgid "ID"
+msgstr "الكود"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_res_partner__instructor
+#: model:ir.model.fields,field_description:openacademy.field_res_users__instructor
+msgid "Instructor"
+msgstr "المحاضر"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_course____last_update
+#: model:ir.model.fields,field_description:openacademy.field_academy_session____last_update
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard____last_update
+msgid "Last Modified on"
+msgstr "اخر تعديل امتي"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_course__write_uid
+#: model:ir.model.fields,field_description:openacademy.field_academy_session__write_uid
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__write_uid
+msgid "Last Updated by"
+msgstr "اخر تحديث بواسطه"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_course__write_date
+#: model:ir.model.fields,field_description:openacademy.field_academy_session__write_date
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__write_date
+msgid "Last Updated on"
+msgstr "اخر تحديث امتي"
+
+#. module: openacademy
+#: model:res.groups,name:openacademy.Manager_Member
+msgid "Manager Member"
+msgstr "قسم المدير"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.Course_search
+msgid "My Search"
+msgstr "البحث الخاص بي"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_session__number_of_attendence
+msgid "Number Of Attendence"
+msgstr "عدد الحضور"
+
+#. module: openacademy
+#: model:ir.module.category,name:openacademy.Category
+msgid "Open Academy"
+msgstr "المنظمه "
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.Course_form
+msgid "Register Sessions"
+msgstr "تسجيل الموسم"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_course__responsible_id
+msgid "Resonsible"
+msgstr "المسئول"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.Course_search
+msgid "Responsible"
+msgstr "المسئول"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.session_form
+msgid "Schedule"
+msgstr "الجدول"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_course__session_ids
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__session_ids
+#: model:ir.ui.menu,name:openacademy.session_menuitem
+#: model_terms:ir.ui.view,arch_db:openacademy.partner_form_inhert
+msgid "Session"
+msgstr "الموسم"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.session_form
+msgid "Session Form"
+msgstr "تصميم الموسم"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.session_tree
+msgid "Session Tree"
+msgstr "تصميم الخارجي للموسم"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.view_kanban
+msgid "Session name:"
+msgstr "اسم الموسم"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.Course_form
+msgid "Sessions"
+msgstr "الموسم"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_session__start_date
+msgid "Start Date"
+msgstr "تاريخ الموسم"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.wizard_form_view
+msgid "Subscribe"
+msgstr "متابعه"
+
+#. module: openacademy
+#: model:res.groups,name:openacademy.User_Member
+msgid "User"
+msgstr "المستخدم"
+
+#. module: openacademy
+#: model:ir.model,name:openacademy.model_openacademy_wizard
+msgid "Wizard: Quick Registration of Attendees to Sessions"
+msgstr "التسجيل من خلال التصميم"
+
+#. module: openacademy
+#: model:ir.model,name:openacademy.model_academy_session
+msgid "academy session to show courses session details"
+msgstr "تفاصيل الكورس خلال الموسم"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_res_partner__session_ids
+#: model:ir.model.fields,field_description:openacademy.field_res_users__session_ids
+msgid "attendence"
+msgstr "الحضور"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.calender view
+msgid "calender"
+msgstr "التصميم الجدولي"
+
+#. module: openacademy
+#: model:ir.actions.act_window,name:openacademy.contract_action
+msgid "contract action"
+msgstr "الحضورالمتفاعلين"
+
+#. module: openacademy
+#: model:ir.actions.act_window,name:openacademy.course_action
+msgid "course action"
+msgstr " الكوسات الفعاله"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.Course_form
+msgid "description"
+msgstr "الوصف"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_session__instructor_id
+msgid "instructor"
+msgstr "المحاضر"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_session__name
+msgid "name"
+msgstr "الاسم"
+
+#. module: openacademy
+#: model:ir.model.constraint,message:openacademy.constraint_academy_course_Check
+#: Name
+msgid "name of course must be different about description"
+msgstr "اسم الكورس لازم يكون مختلف عن الاسم الموجود في الوصف"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_session__number_of_seat
+msgid "number of seats"
+msgstr "عدد المقاعد"
+
+#. module: openacademy
+#: model:ir.ui.menu,name:openacademy.openacademy_main
+#: model:ir.ui.menu,name:openacademy.openacademy_menu
+msgid "open Academy"
+msgstr "الاكاديميه"
+
+#. module: openacademy
+#: model:ir.model,name:openacademy.model_academy_course
+msgid "openacademy Course "
+msgstr "كورسات الاكاديميه"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.wizard_form_view
+msgid "or"
+msgstr "او"
+
+#. module: openacademy
+#: model:ir.actions.act_window,name:openacademy.session_action
+msgid "session action"
+msgstr " الموسم اللي الفعال"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_session__attendence_ids
+msgid "set of attendees"
+msgstr "مجموعه الحضور"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_session__taken_seats
+msgid "taken seats "
+msgstr " المقاعد المحجوزه"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_academy_course__name
+msgid "title"
+msgstr "العنوان"
